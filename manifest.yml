@@ -1,0 +1,9 @@
+---
+applications:
+- name: pcfhashingServiceBrokerClient
+  memory: 512M
+  path: target/HashingServiceBrokerClient-0.0.1-SNAPSHOT.jar
+  buildpack: java_buildpack
+  random-route: true
+  services:
+   - custom-hashmap-client 
